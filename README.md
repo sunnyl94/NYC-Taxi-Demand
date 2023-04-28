@@ -26,17 +26,18 @@
 
 
 <!-- TABLE OF CONTENTS -->
-<!-- <details>
+<details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#프로젝트-개요">프로젝트 개요</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#📊-분석-방향">분석 방향</a></li>
+        <li><a href="#📝-결론">결론</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
+    <!-- <li>
+      <a href="#분석-진행-과정">분석 진행 과정</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -47,39 +48,35 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li> -->
   </ol>
-</details> -->
+</details>
 
 
 
 <!-- ABOUT THE PROJECT -->
-## 프로젝트 개요
+## 프로젝트 개요 
 뉴욕 택시 수요 예측 알고리즘을 만들어 더 많은 수요가 나올 지역에 택시를 재배치해 수익을 극대화 시킬 수 있는 방법을 찾는 프로젝트입니다.
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 <!-- Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
+### 📊 분석 방향
+- 데이터 수집: BigQuery 공개 데이터셋에서 NYC 택시 이용 로그데이터
+- 2015년 1월 데이터 중 학습 데이터는 1~24일 데이터, 검증 데이터는 24~31일 데이터
+- 새로운 피쳐 생성: 시간별 lag time (1hr, 24hr, 168hr)
+- 모델링: 4개의 모델 중 오차율이 제일 낮은 Random Forest Regressor 사용
+
+### 📝 결론
+새로운 피쳐 중 1hr lag의 중요도가 매우 높았으며, 시간의 영향을 많이 받는 것으로 나타났다.\
+<br />
+베이스라인 생성 이후, 수요 예측을 해결하기 위한 추가 모델링 모델의 경우 베이스라인에 비해서 수요 예측이 더 정확해진 것을 확인할 수 있다.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- ### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
-
-
-
 <!-- GETTING STARTED -->
-<!-- ## Getting Started
+<!-- ## 분석 진행 과정
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
