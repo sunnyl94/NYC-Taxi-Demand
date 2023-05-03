@@ -108,11 +108,13 @@
         - is_weekend: 평일 -> 0, 주말 -> 1
 
 2. 수요가 왼쪽으로 편중 되어 있기 때문에 로그 변환
-<p align="center">
-  <img src="images/before-log.png" alt="before-log" width="35%" height="150">
-  <font size="5">&nbsp;&nbsp;➡️&nbsp;&nbsp;</font>
-  <img src="images/after-log.png" alt="after-log" width="35%" height="150">
-</p>
+<div style="display: flex; align-items: center; ">
+  <img src="images/before-log.png" alt="before-log" width="50%" height="150">
+  <p style="margin: auto;">
+    <font size="5">&nbsp;&nbsp;➡️&nbsp;&nbsp;</font>
+  </p>
+  <img src="images/after-log.png" alt="after-log" width="50%" height="150">
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,19 +164,23 @@
 
 2. 'datetime'별 실제 vs 예측 비교
 
-<p align="center">
-  <img src="images/without1.png" alt="without1" width="35%" height="150">
-  <font size="5">&nbsp;&nbsp;➡️&nbsp;&nbsp;</font>
-  <img src="images/with1.png" alt="with1" width="35%" height="150">
-</p>
+<div style="display: flex; align-items: center;">
+  <img src="images/without1.png" alt="without1" width="50%" height="150">
+  <p style="margin: auto;">
+    <font size="5">&nbsp;&nbsp;➡️&nbsp;&nbsp;</font>
+  </p>
+  <img src="images/with1.png" alt="with1" width="50%" height="150">
+</div>
 
 3. 'hour'별 실제 vs 예측 비교
 
-<p align="center">
-  <img src="images/without2.png" alt="without2" width="35%" height="150">
-  <font size="5">&nbsp;&nbsp;➡️&nbsp;&nbsp;</font>
-  <img src="images/with2.png" alt="with2" width="35%" height="150">
-</p>
+<div style="display: flex; align-items: center; ">
+  <img src="images/without2.png" alt="without2" width="50%" height="150">
+  <p style="margin: auto;">
+    <font size="5">&nbsp;&nbsp;➡️&nbsp;&nbsp;</font>
+  </p>
+  <img src="images/with2.png" alt="with2" width="50%" height="150">
+</div>
 
 4. 결과
     - Time Feature를 추가하였을 때 MAE, MSE 에러가 내려가고 예측면에서도 아주 좋은 결과를 보여줌
