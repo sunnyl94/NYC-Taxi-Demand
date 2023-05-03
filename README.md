@@ -79,9 +79,7 @@
 
 ### 문제 소개
 
-<center>
-
-<table>
+<table align="center">
   <tr>
     <th>문제 발견</th>
     <td>지역별 택시 공급이 수요와 맞지 않아 수익을 내지 못하는 택시들이 발생</td>
@@ -99,8 +97,6 @@
     <td>지역별 수요에 맞게 택시를 재배치해 수익을 극대화 시킬 수 있다</td>
   </tr>
 </table>
-
-</center>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,7 +120,7 @@
 1. 평가 척도: MAE, MAPE, MSE 사용
 2. 비교 모델: Linear Regression (baseline), XGBoost Regressor, LightGBM, Random Forest Regressor
 
-<center>
+<div align="center">
 
 | Model Name            | MAE    | MAPE    | MSE      |
 |-----------------------|--------|---------|----------|
@@ -133,7 +129,7 @@
 | LGBMRegressor         |  48.24 |  421.69 | 13755.68 |
 | RandomForestRegressor |  35.27 |  184.41 | 12195.66 |
 
-</center>
+</div>
 
 3. 메인 모델: 평가 척도 결과가 제일 좋은 Random Froest Regreesor로 결정
 
@@ -150,7 +146,7 @@
 
 1. 평가 척도 비교
 
-<center>
+<div align="center">
 
 | Model Name            | MAE    | MAPE    | MSE      |
 |-----------------------|--------|---------|----------|
@@ -162,9 +158,9 @@
 |-----------------------|--------|---------|----------|
 | RandomForest(Time Feature) |  6.94 |  NaN | 1022.13 |
 
-</center>
+</div>
 
-2. 'datetime'별 실제 vs 예측
+2. 'datetime'별 실제 vs 예측 비교
 
 <p align="center">
   <img src="images/without1.png" alt="without1" width="35%" height="150">
@@ -172,7 +168,7 @@
   <img src="images/with1.png" alt="with1" width="35%" height="150">
 </p>
 
-3. 'hour'별 실제 vs 예측
+3. 'hour'별 실제 vs 예측 비교
 
 <p align="center">
   <img src="images/without2.png" alt="without2" width="35%" height="150">
